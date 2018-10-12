@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import moment from "moment";
 import io from 'socket.io-client';
 import {msgPro} from "./provider/index";
-import config from "./config/index";
+import config from "./config";
 import './App.css';
 
 class App extends Component {

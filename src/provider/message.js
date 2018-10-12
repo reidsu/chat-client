@@ -1,4 +1,4 @@
-import config from "./../config/index"
+import config from "./../config";
 import qs from 'qs';
 export default class MessageProvider {
   constructor() {
