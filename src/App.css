@@ -1,14 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,17 +7,116 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: #ebebec;
 }
 
-.App-link {
-  color: #61dafb;
+.App-content {
+  width: 800px;
+  height: 600px;
+  background: #ffffff;
+  border: 1px solid #9e9e9e;
+  box-shadow: 4px 4px 5px #888888;
+}
+.chat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.chat-message {
+  width: 75%;
+  height: 100%;
+}
+.message-content {
+  height: 87%;
+  background: #f5f5f5;
+  margin: 10px;
+  box-shadow: 0px 0px 13px #888888;
+  color: #615f5f;
+  overflow-y: auto;
+}
+.message-table {
+  padding: 0px;
+  margin: 0px;
+}
+.message-line {
+  text-align: left;
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 35px;
+}
+li.message-line:hover {
+  background: #c2cbd4;
+}
+li.message-line:nth-child(2n) {
+  background: #dee8f3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-time {
+  display: inline-block;
+  font-size: 14px;
+  /* text-align: right; */
+  float: right;
+  color: #c1c1c1;
+  justify-content: center;
+  line-height: 35px;
+}
+.message-footer {
+  height: 10%;
+  position: relative;
+  top: -2px;
+  background: #d9dbdf;
+  margin-right: 8px;
+  /* border: 1px solid black; */
+}
+.chat-file {
+  height: 100%;
+  width: 25%;
+}
+input.message-input {
+  width: 81%;
+  border: 0px;
+  float: left;
+  margin-top: 11px;
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 60%;
+  /* justify-content: center; */
+  box-shadow: 0px 0px 20px #1f9bec;
+}
+button.message-input-btn {
+  width: 70px;
+  height: 35px;
+  /* border: 3px; */
+  border-radius: 4px;
+  border: 0px;
+  background: #fdfdfd;
+  box-shadow: 0px 0px 10px #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  color: #615f5f;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.file-list {
+  width: 95%;
+  height: 87%;
+  box-shadow: 1px 1px 13px #888888;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #615f5f;
+}
+
+button.message-input-btn-clear {
+  width: 77px;
+  height: 35px;
+  border-radius: 4px;
+  background: #72cbff;
+  box-shadow: 0px 0px 2px #fff;
+  color: #fff;
+  margin-right: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+button.message-input-btn-clear:hover {
+  background: #3bb1f5;
 }
